@@ -1,15 +1,13 @@
+# This file is generated. To update it, re-run the build process
 cask 'hello' do
-  package_name = 'hello-0.5.1-20201124025947.pkg'
-  dmg = package_name.sub('.pkg','.dmg')
-
   version '0.5.1'
-  sha256 '2f0fa3e1fcee31669ddf266f08012f7595b300dd6524b1613ce7f9127f331918'
+  sha256 'd8c7dcf891dbb631fa6528621f78bdd7a6ec0cf625d7ab98a6f16d8d3ec25f25'
 
-  url "https://tap.tung.boltops.com/hello/0.5.1/hello-0.5.1-20201124025947.dmg" # DMG
-  name 'Hello'
+  url "https://tap.tung.boltops.com/hello/0.5.1/hello-0.5.1-20201124153604.dmg"
+  name 'hello'
   homepage 'https://boltops.com/hello'
 
-  pkg package_name # PKG
+  pkg "hello-0.5.1-20201124153604.pkg"
 
   uninstall pkgutil: 'test.boltops.pkg.hello'
 end
