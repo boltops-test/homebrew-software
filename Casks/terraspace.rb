@@ -9,4 +9,11 @@ cask 'terraspace' do
   sha256 '483d3cea86611c25d83ff1340f1cf87411f5e1d6edb7a9cf4cb7f0b4969bf56c'
 
   uninstall pkgutil: 'test.boltops.pkg.terraspace'
+
+  def post_install
+    puts "test1"
+    system "touch /tmp/terraspace-test1.txt"
+    system "sudo chown -R `whoami`:staff /opt/terraspace"
+    puts "test1"
+  end
 end
