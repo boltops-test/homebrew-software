@@ -2,18 +2,11 @@
 cask 'terraspace' do
   name 'terraspace'
   homepage 'https://terraspace.cloud'
-  version '0.5.1'
+  version '0.5.6'
 
-  pkg "terraspace-0.5.1-20201125231334.pkg"
-  url "https://tap.tung.boltops.com/terraspace/0.5.1/terraspace-0.5.1-20201125231334.dmg"
-  sha256 '483d3cea86611c25d83ff1340f1cf87411f5e1d6edb7a9cf4cb7f0b4969bf56c'
+  pkg "terraspace-0.5.6-20201201043316.pkg"
+  url "https://tap.tung.boltops.com/terraspace/0.5.6/terraspace-0.5.6-20201201043316.dmg"
+  sha256 'e758d302e676fa2b3d38b3c9ff647fa42794a5b00d69b7b69ed91aea90fff61e'
 
   uninstall pkgutil: 'test.boltops.pkg.terraspace'
-
-  def post_install
-    puts "test1"
-    system "touch /tmp/terraspace-test1.txt"
-    system "sudo chown -R `whoami`:staff /opt/terraspace"
-    puts "test1"
-  end
 end
