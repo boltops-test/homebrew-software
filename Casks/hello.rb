@@ -4,9 +4,9 @@ cask 'hello' do
   homepage 'https://boltops.com/hello'
   version '0.5.6'
 
-  pkg "hello-0.5.6-20201201011342.pkg"
-  url "https://tap.tung.boltops.com/hello/0.5.6/hello-0.5.6-20201201011342.dmg"
-  sha256 'd2ff96f41f8ef7f7252eb546fddab92b12df81f874a2bdb10eadfd6b96710a0d'
+  pkg "hello-0.5.6-20201201011527.pkg"
+  url "https://tap.tung.boltops.com/hello/0.5.6/hello-0.5.6-20201201011527.dmg"
+  sha256 '2d2406717aacc1ebcbae8a6709443e7a6113c5599161a760c62e7f8b4d0dd91b'
 
   uninstall pkgutil: 'test.boltops.pkg.hello'
 end
